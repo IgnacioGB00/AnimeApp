@@ -9,16 +9,26 @@ h1{
     justify-content: center;
     flex-direction: column;
 }
+footer{
+    margin-top: 31em;
+}
 
 @media(width >= 1200px){
-    #animeName{
-         margin-top: -215px;
+   #animeName{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 98vh;
+        text-align: start;
+        
     }
+    .gridCards{
+        padding-top: 1em;
+    }
+    
+    h1{
+        align-self: start;
+        padding: 1em 5em;
     }
 }
 
