@@ -172,7 +172,7 @@ let urlanime = {
             .then(data => {
                 if (data.data && data.data.length > 0) {
                     let animeId = data.data[0].mal_id; // Obtiene el ID del anime
-                    window.location.href = `./anime/anime.html?id=${animeId}`;
+                    window.location.href = `../anime/anime.html?id=${animeId}`;
                 } else {
                     console.error("No se encontró el anime");
                 }
@@ -184,7 +184,42 @@ let urlanime = {
             .then(data => {
                 if (data.data && data.data.length > 0) {
                     let animeId = data.data[0].mal_id; // Obtiene el ID del anime
+                    window.location.href = `./anime/anime.html?id=${animeId}`;
+                } else {
+                    console.error("No se encontró el anime");
+                }
+            })
+    }
+    
+    })
+  },
+  clickCardsDos: function() {
+    document.addEventListener('click', (e) => {
+      let tarjeta = e.target.closest('.tarjetaDos');
+      let titulo = tarjeta.querySelector('.tituloH3'); // Busca el título dentro de la tarjeta
+    if (titulo) {
+        console.log(titulo.innerText);
+        let animeTitulo = titulo.innerText.trim();
+        let animeInfo = `${urlanime.url}anime?q=${animeTitulo}&limit=1`;
+
+        fetch(animeInfo)
+            .then(response => response.json())
+            .then(data => {
+                if (data.data && data.data.length > 0) {
+                    let animeId = data.data[0].mal_id; // Obtiene el ID del anime
                     window.location.href = `../anime/anime.html?id=${animeId}`;
+                } else {
+                    console.error("No se encontró el anime");
+                }
+            })
+            .catch(error => console.error("Error al buscar el anime:", error));
+            let animeInfoDos = `${urlanime.url}anime?q=${animeTitulo}&limit=1`;
+            fetch(animeInfoDos)
+            .then(response => response.json())
+            .then(data => {
+                if (data.data && data.data.length > 0) {
+                    let animeId = data.data[0].mal_id; // Obtiene el ID del anime
+                    window.location.href = `./anime/anime.html?id=${animeId}`;
                 } else {
                     console.error("No se encontró el anime");
                 }
