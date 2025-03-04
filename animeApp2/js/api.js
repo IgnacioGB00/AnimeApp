@@ -172,7 +172,7 @@ let urlanime = {
             .then(data => {
                 if (data.data && data.data.length > 0) {
                     let animeId = data.data[0].mal_id; // Obtiene el ID del anime
-                    window.location.href = `../anime/anime.html?id=${animeId}`;
+                    window.location.href = `./anime/anime.html?id=${animeId}`;
                 } else {
                     console.error("No se encontró el anime");
                 }
