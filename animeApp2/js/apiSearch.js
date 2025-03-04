@@ -24,4 +24,4 @@ urlanime.searchname = function (data) {
 }
 urlanime. searchanime();
 urlanime.inputname();
-urlanime.clickCards();
+urlanime.clickCardsDos();
