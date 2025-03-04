@@ -377,9 +377,7 @@ footer ul li a{
         transition: background-color 0.5s;
         box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     }
-    #animeName div .buttonBlue{
-        width: 5em;
-    }
+   
 }
 @media(width >= 600px) and (width < 1200px) {
     #burger #link li a, #burger #menuInicio li a{
