@@ -24,4 +24,4 @@ urlanime.animeFilter = function (data) {
   }
   urlanime.cargar();
   urlanime.filterAnime();
-  urlanime.clickCards();
+  urlanime.clickCardsDos();
