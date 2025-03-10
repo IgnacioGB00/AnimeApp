@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <link rel="stylesheet" href="../css/same.css" >
+    <link rel="stylesheet" href="../css/search.css">
+    <script src="../js/same.js" defer></script>
+    <script src="../js/apiSearch.js" defer type="module"></script>
+</head>
+<body>
+    <header id="head">
+        <nav id="nav">
+           <a href="../index.html"> <img id="logo" src="../img/logo.png" alt="logo"></a>
+           <input type="checkbox"  id="menu" placeholder="menu">
+            <label for="menu" id="iconBurger" >                         
+                <div class="top"></div>
+                <div class="meat"></div>
+                <div class="bottom"></div>
+            </label>
+            <nav id="burger">
+                <ul id="link">
+                    <li><a href="../index.html" class="titulos titleWith">Home</a></li>
+                    <li><a href="../search/filter.html" class="titulos titleWith">Anime Directory</a></li>
+                    <li><a href="../anime/myLists.html" class="titulos titleWith">My List</a></li>
+                </ul>
+                <ul id="icon">
+                    <li><a href="../search/search.html"><img src="../img/search.png" alt="search icon"></a></li>
+                    <li id="user"><img  src="../img/user.png" alt="user icon"> <p class="titulos" id="userName"></p></li>
+                </ul>
+                 <ul id="menuInicio">
+                    <li><a href="../account/logIn.html" class="titulos titleWith" id="Iniciar">Login</a></li>
+                    <li><a href="#" class="titulos titleWith">Favorites</a></li>
+                    <li><a href="#" class="titulos titleWith">Settings</a></li>
+                    <li><a href="#" class="titulos titleWith" id="Cerrar">Sign Out</a></li>
+                </ul> 
+            </nav>
+        </nav>
+        
+    </header>
+    <section id="search">
+                
+        <label for="animeSearch" class="titulos" id="searchL"><img src="../img/search.png" alt=""> <input type="search" name="animeSearch" id="animeSearch" placeholder="Search"></label>
+
+    
+        <div id="filtroCont" class="gridCards">    
+            
+        </div>
+    </section>
+    <footer>
+        <p class="titulos"> <b> Anime Online</b> - No video is hosted on our servers.</p>
+        <ul>
+            <li><a href="#" class="titulos">Download TikTok Videos</a></li>
+            <li><a href="#" class="titulos">Terms and Conditions</a></li>
+            <li><a href="#" class="titulos">Privacy Policy</a></li>
+            <li><a href="#" class="titulos">About NekoNite</a></li>
+        </ul>
+        <img src="../img/logoBlack.png" alt="logo">
+        <ul id="iconos">
+            <li><a href="#"><img src="../img/facebook.png" alt="facebook icon"></a></li>
+            <li><a href="#"><img src="../img/youtube.png" alt="youtube icon"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+    
