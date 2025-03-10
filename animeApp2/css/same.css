@@ -109,6 +109,7 @@ footer{
     background-color: #EFEFEF;
     padding: 1.5em;
     text-align: center;
+    min-height: 200px;
 }
 
 footer ul li{
