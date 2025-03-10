@@ -340,6 +340,7 @@ footer ul li a{
         align-items: center;
         padding: 2em;
         width: 100%;
+        min-height: 200px;
     }
     footer p{
         padding: 1.2em 1em 0 1em;
