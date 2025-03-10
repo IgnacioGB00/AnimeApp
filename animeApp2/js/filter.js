@@ -11,7 +11,6 @@ urlanime.animeFilter = function (data) {
          cardTitulos.classList.add('conenedorTitulo', 'cardTitulo');
          let imagen = document.createElement('img');
          imagen.src = data.images.jpg.image_url;
-         imagen.classList.add('lazyload');
          imagen.loading = 'lazy';
          imagen.width = 300;  // Ajusta según corresponda
         imagen.height = 450
