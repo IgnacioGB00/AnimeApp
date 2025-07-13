@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+}
+
+#animeName{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer{
+    margin-top: 31em;
+}
+
+@media(width >= 1200px){
+   
+    #animeName{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: start;
+        
+    }
+    .gridCards{
+        padding-top: 1em;
+    }
+    
+    h1{
+        align-self: start;
+        padding: 1em 5em;
+    }
+}
+
